@@ -1,0 +1,30 @@
+{
+  "name": "proyectoWebPatriciaStocker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "nodemon main.js",
+    "dev": "parcel src/Vista/formulario/formulario_registro.ejs -d public/dist --open",
+    "build": "parcel build src/Vista/formulario/formulario_registro.ejs -d public/dist",
+    "compile-sass": "node-sass src/Vista/main.scss public/css/main.css"
+  },
+  "keywords": [],
+  "author": "Tomás Barrientos",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.15",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "6.10.4",
+    "nodemailer": "^6.7.2",
+    "path": "^0.12.7",
+    "readline": "^1.3.0",
+    "typescript": "^5.0.2"
+  }
+}
